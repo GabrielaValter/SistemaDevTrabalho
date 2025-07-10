@@ -1,0 +1,162 @@
+/* Reset e base */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f7fa;
+}
+
+/* Barra superior */
+.header {
+    background-color: #003366;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.header .icons i {
+    font-size: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.logout-link {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    padding: 30px 40px;
+    gap: 40px;
+}
+
+/* Perfil lateral */
+.profile-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px 20px;
+    width: 270px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    color: #003366;
+    align-self: flex-start;
+}
+
+.profile-card .avatar {
+    width: 80px;
+    height: 80px;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    margin: 0 auto 16px;
+}
+
+.profile-card .info {
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+/* Mural central */
+.feed {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    overflow-y: auto;
+    max-height: calc(100vh - 120px);
+}
+
+/* Campo de busca */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+    width: 60%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    margin-left: -35px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Título do mural */
+.feed h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+/* Cards de problemas */
+.problem-card {
+    border-bottom: 1px solid #ccc;
+    padding: 16px 0;
+}
+
+.problem-card h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.problem-card p {
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+.problem-card .meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #222;
+    font-weight: bold;
+}
+
+.floating-add-bar {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background-color: #003366;
+    color: #ffffff;
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+.floating-add-bar:hover {
+    background-color: #00509e;
+}
+
+.floating-add-bar i {
+    font-size: 18px;
+}
